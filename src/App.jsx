@@ -163,12 +163,12 @@ function CourseDetails({id}) {
 
 function Subjects() {
   const subjects = [
-    ["English","bi-translate","Reading, vocabulary, grammar and speaking."],
-    ["Mathematics","bi-calculator","Numbers, operations and problem solving."],
-    ["Hindi","bi-book","Reading, writing and language skills."],
-    ["General Knowledge","bi-globe2","Fun facts about India and the world."],
+    ["Mathematics","bi-calculator","Class 9th to 12th mathematics concepts and practice."],
+    ["Physics","bi-thermometer","Class 9th to 12th physics concepts and practice."],
+    ["Chemistry","bi-thermometer","Class 9th to 12th chemistry concepts and practice."],
+    ["English","bi-book","Class 9th to 12th English grammar and comprehension."],
     ["EVS","bi-tree","Our environment, plants, animals and people."],
-    ["Computer Basics","bi-laptop","Digital awareness and basic computer skills."]
+    ["Computer","bi-laptop","Digital awareness and basic computer skills."]
   ];
   return <main className="page"><div className="container"><PageTitle eyebrow="Explore" title="Subjects" text="Choose a subject and strengthen your fundamentals."/>
     <div className="row g-4 mt-3">{subjects.map(([name,icon,desc])=><div className="col-md-6 col-lg-4" key={name}><div className="subject-card"><div className="feature-icon"><i className={"bi "+icon}/></div><h5>{name}</h5><p>{desc}</p><button className="btn btn-sm btn-outline-primary rounded-pill">Explore</button></div></div>)}</div>
